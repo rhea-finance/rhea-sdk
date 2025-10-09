@@ -1,4 +1,4 @@
-# Ref SDK
+# Rhea SDK
 Disclaimer: 
 Our SDK is provided by a third party, and we do not take any responsibility for any losses caused by the use of this SDK.
 
@@ -20,7 +20,7 @@ npm: `npm install @ref-finance/ref-sdk`
 
 ## Initialization
 
-Ref SDK identifies env variable NEAR_ENV or REACT_APP_REF_SDK_ENV to get global configuration.
+Rhea SDK identifies env variable NEAR_ENV or REACT_APP_REF_SDK_ENV to get global configuration.
 
 ```plain
 export function getConfig(
@@ -90,7 +90,7 @@ init_env('mainnet', '', 'https://beta.rpc.mainnet.near.org');
 
 
 
-## Ref V1 Swap
+## Rhea V1 Swap
 
 ### Tokens
 
@@ -750,11 +750,11 @@ Response
 
 
 
-## Ref Swap Widget
+## Rhea Swap Widget
 
 ### Description
 
-The Ref Swap Widget is a useful tool, allowing any third party service to access Ref's liquidity. Users of ecosystem dapps have the ability to swap via the Widget, without the need to go to Ref app, thus improving the user experience.
+The Rhea Swap Widget is a useful tool, allowing any third party service to access Rhea's liquidity. Users of ecosystem dapps have the ability to swap via the Widget, without the need to go to Rhea app, thus improving the user experience.
 
 Here are some use cases:
 
@@ -762,18 +762,18 @@ Here are some use cases:
 - Swapping tokens to lend, farm or stake
 - Swapping one token for a specific token, which can be used to buy a NFT in the associated marketplace
 
-Using the Ref Swap Widget, with a few customizations, developers can integrate the Swap funtion directly into their dapps. Both mobile and/or website version are available.
+Using the Rhea Swap Widget, with a few customizations, developers can integrate the Swap funtion directly into their dapps. Both mobile and/or website version are available.
 ![图片](https://user-images.githubusercontent.com/50706666/199178215-f2b184dc-f683-4740-af9f-fd67efd41503.png)
 
 For the default theme, developers can chose between the light mode and dark mode.
 
 More themes can be selected: [Click here to check them on figma](https://www.figma.com/file/v069nTXfE8pXDJQcDcC5wl/Swap-Widget?node-id=0%3A1).
 
-To integrate the Ref Swap Widget, please follow this guide.
+To integrate the Rhea Swap Widget, please follow this guide.
 
 ### Getting started
 
-A QuickStart of Ref Swap component.
+A QuickStart of Rhea Swap component.
 
 #### Props
 
@@ -807,7 +807,7 @@ export interface SwapWidgetProps {
 ```
 
 - theme: widget theme for customization.
-- defaultTokenList: default tokens with ref whitelist into  token list in the widget.
+- defaultTokenList: default tokens with Rhea whitelist into  token list in the widget.
 - onSwap: Swap button triggers this function.
 - width: width of widget component.
 - height: height of widget component.
@@ -967,7 +967,7 @@ export const Widget = ()=>{
 }
 ```
 
-### Integrating Ref Swap function using the SDK
+### Integrating Rhea Swap function using the SDK
 
 The SDK provides more flexibility/options.
 
@@ -983,11 +983,11 @@ SDK integration tips:
 - For a better user experience, before the execution of the swap, you can show more details about the swap (ex: fee, rate, route, etc.), allowing users to take better data-driven decisions.
 - You can redirect the user to the NEAR Explorer, once the transaction is confirmed.
 
-## Ref V2(DCL) Swap
+## Rhea V2(DCL) Swap
 
-#### An overview of Ref V2
+#### An overview of Rhea V2
 
-The launch of concentrated liquidity AMM is an achievement for Ref Finance. In collaboration with Izumi Finance and Arctic, Ref is glad to introduce discretized concentrated liquidity and limit order two new key features to the NEAR ecosystem. Using REF SDK, developers can dig more opportunities and implement various trading strategies.Before introducing SDK details, let's have an overview of V2 exciting features.
+The launch of concentrated liquidity AMM is an achievement for Rhea Finance. In collaboration with Izumi Finance and Arctic, Rhea is glad to introduce discretized concentrated liquidity and limit order two new key features to the NEAR ecosystem. Using Rhea SDK, developers can dig more opportunities and implement various trading strategies.Before introducing SDK details, let's have an overview of V2 exciting features.
 
 #### Discretized concentrated liquidity
 
